@@ -24,7 +24,7 @@ COMMING SOON PAGE
             hours.html('<h1><b>Blog</b></h1><p></p>');
             minutes.html('<h1><b>Pics</b></h1><p></p>');
             seconds.html('<h1><b>Food</b></h1><p></p>');
-            message.html('<b>WELCOME.</b>');
+            message.html('<b>WELCOME. THIS SITE IS UNDER CONSTRUCTION.</b>');
         }
         else{
             var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
