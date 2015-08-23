@@ -15,16 +15,16 @@ COMMING SOON PAGE
     var hours = $('#hours');
     var minutes = $('#minutes');
     var seconds = $('#seconds');
-    
+
     setDate();
     function setDate(){
         var now = new Date();
         if( launch < now ){
-            days.html('<h1>Code</h1><p></p>');
-            hours.html('<h1>Blog</h1><p></p>');
-            minutes.html('<h1>Pics</h1><p></p>');
-            seconds.html('<h1>Food</h1><p></p>');
-            message.html('WELCOME.');
+            days.html('<h1><b>Code</b></h1><p></p>');
+            hours.html('<h1><b>Blog</b></h1><p></p>');
+            minutes.html('<h1><b>Pics</b></h1><p></p>');
+            seconds.html('<h1><b>Food</b></h1><p></p>');
+            message.html('<b>WELCOME.</b>');
         }
         else{
             var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
@@ -53,13 +53,13 @@ ANIMATIONS
 (function($) {
     "use strict";
     var isMobile = false;
-    if (navigator.userAgent.match(/Android/i) || 
+    if (navigator.userAgent.match(/Android/i) ||
         navigator.userAgent.match(/webOS/i) ||
-        navigator.userAgent.match(/iPhone/i) || 
-        navigator.userAgent.match(/iPad/i)|| 
-        navigator.userAgent.match(/iPod/i) || 
-        navigator.userAgent.match(/BlackBerry/i)) {                 
-        isMobile = true;            
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i)||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i)) {
+        isMobile = true;
     }
     if (isMobile == true) {
         $('body').removeClass('nomobile');
@@ -129,6 +129,6 @@ PROGRESS BAR
 (function($) {
     "use strict";
     $("a.btn-progress").click(function(){
-        $('#bar-container').slideToggle(); 
+        $('#bar-container').slideToggle();
     });
 })(jQuery);
